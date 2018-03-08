@@ -1,0 +1,120 @@
+html,body{
+   background: #f8f8f8;
+}
+.flex{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.flex-between{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.van-contact-card__content{
+    display: flex;
+    align-items: center;
+}
+
+.van-submit-bar__price{
+    display: flex;
+    align-items: center;
+    padding-left: 3%;
+}
+.van-icon__info{
+    z-index: 9;
+}
+.van-tabbar-item--active{
+    color: #f44;
+}
+.cart{
+  .van-submit-bar__price{
+     justify-content: flex-end;
+    } 
+  .card-goods__item{
+     .van-icon{
+         position: absolute;
+         top: 50%;
+         margin-top: -10px;
+     }
+     .van-checkbox__label{
+         margin-left: 7%;
+     }
+  } 
+}
+
+.pay{
+    .van-cell-group{
+        margin-bottom: 0.2rem;
+        .van-card{
+            background: #fff;
+            border-bottom: 1px solid #e5e5e5;
+        }
+    }
+    .van-submit-bar__price{
+        display: flex !important;
+        align-items: center;
+        padding-left: 3%;
+    }
+    .showType{
+        width: 100%;
+        height: 100%;
+        background: #f8f8f8;
+        .title {
+            height: 0.4rem;
+            line-height: 0.4rem;
+            font-size: 0.28rem;
+            color: #999;
+            padding:0.4rem 0 0.1rem 3%;
+        }
+        .van-checkbox{
+            font-size: 0.32rem;
+            background: #fff;
+            padding: 0.3rem 3% 0.3rem 0;
+            border-bottom: 1px solid #e5e5e5;
+            .van-icon{
+                float: right;
+            }
+            span{
+                display: block;
+            }
+        }
+    }
+}
+
+.limitt{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+
+@media(-webkit-min-device-pixel-ratio:1.5),(min-device-pixel-ratio:1.5){
+    .border-1px{
+        &:after{
+            transform: scaleY(0.7);
+        }
+    }
+}
+@media(-webkit-min-device-pixel-ratio:2),(min-device-pixel-ratio:2){
+    .border-1px{
+        &:after{
+            transform: scaleY(0.5);
+        }
+    }
+}
+.border-1px(@color:#e5e5e5){
+    position: relative;
+    &:after{
+        display: block;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        border-top:1px solid @color;
+        content: '';
+    }
+}
