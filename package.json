@@ -2,7 +2,7 @@
   "name": "vue-cake",
   "version": "1.0.0",
   "description": "a shop for cake",
-  "author": "sayid760 <707207578@qq.com>",
+  "author": "sayid760 <comeon32@qq.com>",
   "private": true,
   "scripts": {
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
